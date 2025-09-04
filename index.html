@@ -278,7 +278,7 @@
   </main>
   
   <!-- 星空与行星过渡的液态波形 -->
-  <div class="fixed left-0 right-0 pointer-events-none z-0 wave-layer wave-1">
+  <div class="fixed left-0 right-0 pointer-events-none z-0 wave-layer wave-1" style="bottom:calc(33.333% - 160px);height:140px;left:-4vw;right:-4vw;">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none" class="w-full h-full wave-drift">
       <defs>
         <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
@@ -289,7 +289,7 @@
       <path d="M0,70 C240,120 480,10 720,60 C960,110 1200,20 1440,50 L1440,120 L0,120 Z" fill="url(#g)" />
     </svg>
   </div>
-  <div class="fixed left-0 right-0 pointer-events-none z-0 wave-layer wave2 wave-2">
+  <div class="fixed left-0 right-0 pointer-events-none z-0 wave-layer wave2 wave-2" style="bottom:calc(33.333% - 175px);height:150px;left:-4vw;right:-4vw;">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 130" preserveAspectRatio="none" class="w-full h-full wave-drift2">
       <defs>
         <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
@@ -320,14 +320,14 @@
     <!-- 遮罩层 -->
     <div id="walletOverlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40"></div>
     <!-- 弹窗容器 -->
-    <div class="relative z-50 bg-darker rounded-xl shadow-2xl w-full max-w-5xl overflow-hidden border border-gray-800">
+    <div class="relative z-50 bg-darker rounded-xl shadow-2xl w-full sm:max-w-5xl border border-gray-800 h-[90vh] max-h-[90vh] md:h-auto md:max-h-none overflow-y-auto">
       <!-- 关闭按钮 -->
       <button id="walletCloseBtn" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10">
         <i class="fa fa-times text-lg"></i>
       </button>
       <div class="flex flex-col md:flex-row">
         <!-- 左侧：钱包列表 -->
-        <div class="w-full md:w-1/2 p-6 border-b md:border-b-0 md:border-r border-gray-800 max-h-[600px] overflow-y-auto scrollbar-thin">
+        <div class="w-full md:w-1/2 p-4 sm:p-6 border-b md:border-b-0 md:border-r border-gray-800 max-h-[600px] overflow-y-auto scrollbar-thin">
           <h2 class="text-white text-xl font-semibold mb-6">Connect a Wallet</h2>
           <p class="text-gray-400 text-sm mb-4">Recommended</p>
           <div class="space-y-2">
@@ -357,7 +357,7 @@
           </div>
         </div>
         <!-- 右侧：说明 -->
-        <div class="w-full md:w-1/2 p-8 bg-card flex flex-col justify-between">
+        <div class="w-full md:w-1/2 p-4 sm:p-8 bg-card flex flex-col justify-between">
           <div>
             <h2 class="text-white text-xl font-semibold mb-6">What is a Wallet?</h2>
             <div class="mb-8">
